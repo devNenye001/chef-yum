@@ -1,21 +1,27 @@
-import Navigation from './components/Navigation'
-import Hero from './components/Hero'
-import About from './components/About'
-import Menu from './components/Menu'
-import Press from './components/Press'
-import Footer from './components/Footer'
+import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import SocialProof from "./components/SocialProof";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import RestaurantGallery from "./components/RestaurantGallery";
+import FoodGallery from "./components/FoodGallery";
 
 export default function App() {
   return (
-    <div className="bg-charcoal-950 text-white overflow-x-hidden">
+    <div className="bg-white text-gray-900 overflow-x-hidden">
       <Navigation />
       <main>
         <Hero />
         <About />
-        <Menu />
-        <Press />
+        <FoodGallery />
+        <Services />
+        <RestaurantGallery />
+        <SocialProof />
+        <Contact />
       </main>
       <Footer />
     </div>
-  )
+  );
 }
